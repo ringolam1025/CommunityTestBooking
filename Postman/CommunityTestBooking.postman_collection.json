@@ -1,0 +1,59 @@
+{
+	"info": {
+		"_postman_id": "83705704-f0b6-48a4-9ca0-db8e24fe3f93",
+		"name": "CommunityTestBooking",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GetByCenterID",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://bookingform.communitytest.gov.hk/form/api_center?center_id=9",
+					"protocol": "https",
+					"host": [
+						"bookingform",
+						"communitytest",
+						"gov",
+						"hk"
+					],
+					"path": [
+						"form",
+						"api_center"
+					],
+					"query": [
+						{
+							"key": "center_id",
+							"value": "9"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetCenterList",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://booking.communitytest.gov.hk/form/ct_center",
+					"protocol": "https",
+					"host": [
+						"booking",
+						"communitytest",
+						"gov",
+						"hk"
+					],
+					"path": [
+						"form",
+						"ct_center"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
